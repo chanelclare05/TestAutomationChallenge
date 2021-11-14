@@ -36,3 +36,11 @@ The session crashes/refreshes between application verifying it is the first sess
   1. The edge case would have to check to see if the first session has occured and if there was a new daily reward provided in that day. If the first session had occured but there was no daily reward, then the application would provide a reward, even if it was the 7th session of the day for the user.
 
   Therefore, the test would override the intiial tests, and look at if a reward had been provided and at least one session had occured that day. 
+
+
+  ______________________________________________________________
+
+  How to automate the tests: 
+  - Since there are several tests that can be implemented from user sign in to notifying users of the reward loading, this could be a good way to use end-to-end testing, to test the entire process.
+  
+  However, if we require a more cost/resource efficient process, we can pick crucial tests to automate, such as determining if 1. the users first session or not and 2. provide reward if it is the first session, since there may be other tests to check if log in was successfull or not.  
