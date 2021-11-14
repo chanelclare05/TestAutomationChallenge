@@ -1,0 +1,19 @@
+## Task 2: 
+
+### Pick a game you recently played, select a feature and write up to 300 words on how you would approach testing it in the most efficient way. Feel free to use examples!
+
+The game is the Sims 4 PC game and the feature is the general play of sims and the lagging/performance bugs that can often arise when playing Sims due to the massive processing/rendering loads.
+
+Responsiveness of sims game is important as it is a simulation game that requires constant smooth and detailed rendering/processing of unlimited situations, as it affects the users experience and if the game appears to be 'sluggish', users will not feel they are playing a game with the highest specs and could become quickly disengaged .
+
+I would approach testing by doing thorough 'Performance Tests' to put the application under pressure by executing a high number of requests. For example, queuing up a list of actions to capacity for each sim for a large household of 5 adults, changing speeds back and forth quickly, while there are other actions using up the system's CPU.
+
+This would put the application under immense pressure to process the program and test to see if there are any opportunities for optimising each action or to improve the workflow of the game for users bs reduce lag opportunities. 
+
+Since performance tests can be arduous to run, this would need to run only when new features are being implemented or any changes to ensure new features do not interfere with the game responsiveness. 
+
+To make testing more efficient, I would:
+
+  - Only run a thorough performance test when there are any changes such as feature releases to ‘stress test’ the program 
+  - In-between feature releases have a few end-to-end tests to continually monitor the program and a variety of functional tests to measure output of particular items instead of several end-to-end tests to monitor every function 
+  - Automate the processes as much as possible

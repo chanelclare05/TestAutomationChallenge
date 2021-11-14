@@ -6,3 +6,6 @@ gem 'httparty'
 gem 'nokogiri'
 #Gem for debugging purposes
 gem 'byebug'
+#gem to allow us to access nodes
+gem 'open-uri'
+gem 'csv'
