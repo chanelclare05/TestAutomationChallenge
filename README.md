@@ -17,7 +17,7 @@ Write a script that filters elements from the DOM with duplicated tags from the 
 # Task 2: task2.txt
 Pick a game you recently played, select a feature and write up to 300 words on how you would approach testing it in the most efficient way. Feel free to use examples!
 - question 
-  - Code example?
+  - Code example required?
 
 # Task 3: task3.txt
 You are a part of the team working on a new feature that rewards a player once a day when they start an application. As a Test Automator, you're asked to add test scenarios to acceptance specifications of this feature.

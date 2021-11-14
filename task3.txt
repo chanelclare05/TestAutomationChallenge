@@ -1,0 +1,38 @@
+You are a part of the team working on a new feature that rewards a player once a day when they start an application. As a Test Automator, you're asked to add test scenarios to acceptance specifications of this feature.
+
+Please describe at least 2 happy path tests and at least 1 edge case test for this situation, then how you would automate them.
+______________________________________________________________
+
+Acceptance Specifications:
+
+- The user must be logged in successfully
+    - Happy Path Test:
+        - The user provides username and password, clicks sign in → true
+        - the credentials are authenticated → true
+        - The user is taken to the next screen/homepage → true
+- The account must be an active/valid account
+    - Happy Path Test:
+        - The account has the daily reward feature turned on
+     *(just in case there are scenarios where some accounts do not qualify for the daily reward, A/B testing, etc)* 
+    
+- It must be the first session for user/account in that day
+    - Happy Path Test:
+        - The account has not been logged into/session had not been initialized yet that day → true
+        - The account has not received the daily reward 
+        - The daily reward is loaded to the account
+        - the user is notified that the reward is loaded to account
+
+In other words, the happy tests will test that the input/output from user/application has been fulfilled, happy test flow:
+  1. The user provides username and password, clicks sign in -> test returns true 
+  2. The credentials are authenticated -> test returns true 
+  3. The user is taken to the next screen/homepage -> test returns true 
+  4. The account has the daily reward feature turned on -> test returns true 
+  5. It is the first session for this account/user in the day -> test returns true 
+  6. The account has not received the daily reward -> test returns true 
+  7. The daily reward is loaded to the account -> test returns true 
+
+Edge Case: 
+1. The user logs into active account on multiple devices simultaneously (PC, Phone, tablet)
+    1. How to ensure user only gets 1 reward 
+2. If the session crashes/refreshes between application verifying it is the first session and actually rewarding the accounts
+    1. How to ensure the first session is valdiated, yet no reward provided due to crash/refresh
