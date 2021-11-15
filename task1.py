@@ -30,7 +30,7 @@ def main():
     #Sort by alphabetical
     filtered_sorted_dictionary = sorted(filtered_dictionary.items())
     for k,v in filtered_sorted_dictionary:
-        print ("{} -> {}".format(k,v))
+        print ("tag name: {} -> {}".format(k,v))
  
 main()
 
