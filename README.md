@@ -23,4 +23,6 @@ Pick a game you recently played, select a feature and write up to 300 words on h
 You are a part of the team working on a new feature that rewards a player once a day when they start an application. As a Test Automator, you're asked to add test scenarios to acceptance specifications of this feature.
 
 Please describe at least 2 happy path tests and at least 1 edge case test for this situation, then how you would automate them.
+- question 
+  - how to automate? 
 
