@@ -12,10 +12,10 @@ from operator import itemgetter
 def main():
     url = 'https://godsunchained.com/'
     reqs = requests.get(url)
-    soup = BeautifulSoup(reqs.content, features="html.parser")
+    soup = BeautifulSoup(reqs.content, "lxml")
     dictionary = {}
 
-    for tag in soup.find_all(True, recursive=True):
+    for tag in soup.body.find_all(True):
         if tag.name in dictionary:
             dictionary[tag.name] += 1
         else:
