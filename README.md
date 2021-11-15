@@ -9,7 +9,7 @@ Task 1 - Link to github repository containing code solution
 Task 2 - Link to github repository containing .txt submission up to 300 words
 Task 3 - Link to github repository containing .txt submission up to 300 words
 
-# Task 1: task1.rb
+# Task 1: task1.py
 Write a script that filters elements from the DOM with duplicated tags from the https://godsunchained.com/ page and then prints them in alphabetical order.
 
 https://github.com/chanelclare05/TestAutomationChallenge/blob/main/task1.py
