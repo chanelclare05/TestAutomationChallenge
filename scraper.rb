@@ -1,3 +1,6 @@
+#Difficulty pulling all tags from the Godsunchained website
+
+
 # Write a script that filters elements from the DOM with duplicated tags from the https://godsunchained.com/ page and then prints them in alphabetical order.
 
 
@@ -5,16 +8,15 @@ require 'nokogiri'
 require 'byebug'
 require 'open-uri'
 
-url = "https://help.iinet.net.au/congestion-explained"
+url = "https://godsunchained.com/"
 
 def scraping(url)
   html = URI.open(url)
   doc = Nokogiri::HTML(html)
   final_array = []
 
-  doc.search(".text-formatted").each do |element|
-    element = element.text
-    final_array << element
+  doc.search("*").each do |element|
+    final_array << element.name
   end 
 
   final_array.each_with_index do |element, index|
@@ -28,7 +30,5 @@ def scraping(url)
 end 
 
 
-scraping = scraping(url)
+scraping(url)
 
-
-#Difficulty pulling all tags from the Godsunchained website

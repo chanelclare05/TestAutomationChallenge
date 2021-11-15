@@ -4,7 +4,7 @@
 
 The game is the Sims 4 PC game and the feature is the general play of sims and the lagging/performance bugs that can often arise when playing Sims due to the massive processing/rendering loads.
 
-Responsiveness of sims game is important as it is a simulation game that requires constant smooth and detailed rendering/processing of unlimited situations, as it affects the users experience and if the game appears to be 'sluggish', users will not feel they are playing a game with the highest specs and could become quickly disengaged .
+Responsiveness of sims game is important as it is a simulation game that requires constant smooth and detailed rendering/processing of unlimited situations, as it affects the users experience and if the game appears to be 'sluggish', users will not feel they are playing a game with the highest specs and could become quickly disengaged.
 
 I would approach testing by doing thorough 'Performance Tests' to put the application under pressure by executing a high number of requests. For example, queuing up a list of actions to capacity for each sim for a large household of 5 adults, changing speeds back and forth quickly, while there are other actions using up the system's CPU.
 
