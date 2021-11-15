@@ -24,9 +24,12 @@ def main():
         else:
             dictionary[tag.name] = 1
 
-    #Sort by alphabetical 
-    dictionary_sorted = sorted(dictionary.items())
-    for k,v in dictionary_sorted:
+    #Filter duplicates only
+    pairs = dictionary.items()
+    filtered_dictionary = {key: value for key, value in pairs if value >1}
+    #Sort by alphabetical
+    filtered_sorted_dictionary = sorted(filtered_dictionary.items())
+    for k,v in filtered_sorted_dictionary:
         print ("{} -> {}".format(k,v))
  
 main()
