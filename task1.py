@@ -33,3 +33,9 @@ def main():
         print ("{} -> {}".format(k,v))
  
 main()
+
+# Output
+# link -> 3
+# meta -> 10
+# noscript -> 2
+# script -> 13
